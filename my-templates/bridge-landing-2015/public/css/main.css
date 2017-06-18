@@ -1,0 +1,509 @@
+﻿body {
+    background-color: #B4B4B4;
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	font-size: 100%;
+	line-height: 100%;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+.jir{
+	font-weight: bold;
+}
+.novosti{
+	color: #1B1B1B;
+	font-size: 2vw;
+	letter-spacing: 2px;
+}
+@media screen and (max-width: 700px){
+	.novosti{
+	font-size: 20px;
+	letter-spacing: 2px;
+	}
+}
+@media screen and (max-width: 10000px){
+	h1 {
+		color: #FFFFFF;
+		letter-spacing: 2px;
+		font-size: 3vw;
+	}
+}
+@media screen and (max-width: 700px){
+	h1 {
+		color: #FFFFFF;
+		letter-spacing: 2px;
+		font-size: 20px;
+	}
+}
+@media screen and (max-width: 10000px){
+	h2{
+		color: #FFFFFF;
+		font-size: 2vw;
+		letter-spacing: 2px;
+		font-weight: lighter;
+		line-height: 3vw;
+	}
+}
+@media screen and (max-width: 700px){
+	h2{
+		color: #FFFFFF;
+		font-size: 18px;
+		letter-spacing: 2px;
+		font-weight: lighter;
+		line-height: 6vw;
+	}
+}
+h3{
+	color: #2c5885;
+	font-size: 2.5vw;
+	letter-spacing: 2px;
+}
+@media screen and (max-width: 700px){
+	h3{
+	font-size: 20px;
+	letter-spacing: 2px;
+	}
+}
+h4{
+	color: #2c5885;
+	font-size: 20px;
+	line-height: 35px;
+}
+@media screen and (max-width: 700px){
+	h4{
+	font-size: 20px;
+	line-height: 6vw;
+}
+}
+h5{
+	color: #2c5885;
+	font-size: 16px;
+	line-height: 20px;
+}
+h6{
+	color: #1B1B1B;
+	font-size: 20px;
+	line-height: 25px;
+	font-weight: bold;
+}
+p{
+	line-height: 20px;
+	font-size: 16px;
+}
+.bolshe{
+	line-height: 20px;
+	font-size: 18px;
+}
+.chto_p{
+	line-height: 20px;
+	font-size: 18px;
+	color: #FFFFFF;
+}
+.bolshoe{
+	color: #000000;
+	font-size: 30px;
+	letter-spacing: 1px;
+	line-height: 30px;
+}
+.first{
+	background: url(../images/fon1.png) no-repeat;
+	background-size: cover;
+	width: 100%;
+	min-height: 854px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	min-width: 600px;
+}
+.top{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	text-align: center;
+	padding-top: 50px;
+}
+.top>img{
+margin-top: 2vw;
+}
+header{
+	margin-top: 40px;
+}
+#menu{
+	width: 100%;
+	background-color: #FFFFFF;
+	min-height: 80px;
+	opacity: 0.9;
+}
+#menu>ul>li{
+	display: inline-block;
+	font-size: 18px;
+	padding: 0 10px;
+}
+@media screen and (max-width: 700px){
+	#menu>ul>li{
+		font-size: 14px;
+	}
+}
+#menu>ul>li>a{
+	text-decoration: none;
+	color: #000000;
+}
+#menu>ul>li>a:hover{
+	border-bottom: 3px solid #000000;
+}
+#menu>ul>li>a:visited{
+	color: #000000;
+}
+#menu.fixed {
+    position: fixed;
+    top: 0;
+	left: 0;
+    width: 100%;
+}
+.kontent1{
+	margin-top: 115px;
+}
+#featured{
+	margin: 5% auto 0 auto;
+}
+.second{
+	background: url(../images/fon22.png) no-repeat;
+	background-size: cover;
+	width: 100%;
+	text-align: center;
+	padding-top: 30px;
+	min-width: 600px;
+}
+.kontent2{
+	min-height: 100px;
+}
+.kontent2>img{
+	margin-top: 30px;
+}
+.kontent3{
+	padding: 0 50px 0 50px;
+}
+@media screen and (max-width: 700px){
+	.kontent3{
+	padding: 0 15px 0 15px;
+	}
+}
+.kontent4{
+	width: 100%;
+	margin: 0 auto 0 auto;
+	padding-bottom: 3vh;
+}
+.kontent4>ul>li{
+	display: inline-block;
+	width: 350px;
+	margin: 0 10px;
+}
+.kontent21{
+	background: url(../images/fon21.png) no-repeat;
+	background-size: cover;
+	text-align: center;
+	padding: 50px 50px 30px 50px;;
+	min-height: 500px;
+	min-width: 500px;
+}
+.kontent21>img{
+	margin-top: 35px;
+}
+.korp{
+	text-align: left;
+	margin-left: 20%;
+	list-style-type: circle;
+	font-weight: bold;
+	letter-spacing: 1px;
+	line-height: 20px;
+	color: #1B1B1B;
+}
+.third{
+	background-color: #6A6A6A;
+	background-image: url(../images/fon2.png);
+	width: 100%;
+	min-height: 130px;
+	text-align: center;
+	min-width: 600px;
+}
+.kontent5{
+	display: inline-block;
+	margin: 39px 0 39px 0;
+}
+.reg>li{
+		display: inline-block;
+		margin: 15px 15px;
+}
+.otpravka input.submit{
+	background-color: #1298e3;
+	width: 218px;
+	height: 44px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	font-size: 12px;
+	border: solid 1px #FFFFFF;
+	opacity: 1;
+}
+.otpravka input{
+	background-color: #53555b;
+	width: 218px;
+	height: 41px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: solid 1px #FFFFFF;
+	font-size: 16px;
+	color: #FFFFFF;
+	opacity: 0.7;
+}
+.four{
+	background: url(../images/fon5.jpg);
+	background-size: cover;
+	min-height: 500px;
+	padding-bottom: 20px;
+	min-width: 600px;
+}
+.novosti{
+	padding-top: 30px;
+}
+.four>img{
+	margin-top: 25px;
+}
+.novost{
+	width: 70%;
+	min-height: 450px;
+	margin: 25px 0 0 25%;
+}
+@media screen and (max-width: 1000px){
+	.novost{
+	margin: 25px 0 0 15%;
+	}
+}
+@media screen and (max-width: 1000px){
+	.novost{
+	margin:25px 0 0 10%;
+	}
+}
+@media screen and (max-width: 1000px){
+	.novost{
+	margin:25px 0 0 20px;
+	}
+}
+.novostl{
+	background: #F5F5F5 url(../images/Novostl.png) no-repeat;
+	width: 278px;
+	height: 180px;
+	text-align: left;
+	border-radius: 3px;
+	padding: 135px 10px;
+	margin-right: 10px;
+	float: left;
+	}
+@media screen and (max-width: 1300px){
+	.novostl{
+		float: none;
+		margin-left: 30%;
+	}
+}
+.novostl>img{
+	float :left;
+	margin-right: 10px;
+}
+
+.podrobnee{
+	float: right;
+	color: #1298e3;
+	font-style: italic;
+}
+.novost2{
+	background-color: #F5F5F5;
+	min-height: 210px;
+	width: 550px;
+	margin: 10px 0;
+	border-radius: 3px;
+	float :left;
+}
+@media screen and (max-width: 1300px){
+	.novost2{
+		float: none;
+		margin-left: 12%;
+	}
+}
+#novost2_1{
+	min-height: 180px;
+	width: 50px;
+	background: #F5F5F5 url(../images/Data.png) no-repeat;
+	float: left;
+	margin: 10px 15px;
+}
+#novost2_2{
+	min-height:180px;
+	width:460px;
+	background:#F5F5F5;
+	float:left;
+	margin-top:10px;
+	text-align:left;
+}
+.novost3{
+	background-color:#F5F5F5;
+	min-height:210px;
+	width:550px;
+	margin: 10px 0;
+	border-radius:3px;
+	float:left;
+}
+@media screen and (max-width: 1300px){
+	.novost3{
+		float:none;
+		margin-left:12%;
+	}
+}
+#novost3_1{
+	min-height:180px;
+	width:50px;
+	background:#F5F5F5 url(../images/Data.png) no-repeat;
+	float:left;
+	margin:10px 15px;
+}
+#novost3_2{
+	min-height:180px;
+	width:460px;
+	background:#F5F5F5;
+	float:left;
+	margin-top:10px;
+	text-align:left;
+}
+.five{
+	min-height:260px;
+	background-color:#FFFFFF;
+	clear:left;
+	padding-bottom:50px;
+	min-width:600px;
+}
+.poddergali{
+	min-height:200px;
+	margin:0 auto 0 auto;
+	padding-top:30px;
+}
+.kompanii>ul>a>li{
+	display:inline-block;
+	margin: 20px 20px 0 20px;
+}
+.chto_gost_right{
+	background:url(../images/fon4.png) no-repeat;
+	background-size: cover;
+	text-align: center;
+	min-width:500px;
+	min-height:250px;
+	padding: 40px 50px 50px 50px;
+}
+.chto_gost_right>a>img{
+	border-radius:12px;
+	border:solid 2px #169fe7;
+	margin-top: 40px;
+}
+.chto_gost_left{
+	background:#ebf1f5;
+	text-align: center;
+	min-width:500px;
+	min-height:250px;
+	padding: 20px 50px 0 50px;
+}
+.seven{
+	min-height:310px;
+	background:url(../images/fon6.png) no-repeat;
+	background-size: cover;
+	padding-top:20px;
+	padding-bottom:20px;
+	min-width:600px;
+}
+.fakti_2>ul>li{
+	display:inline-block;
+	width:210px;
+	margin:50px 10px 0 10px;
+}
+.eight{
+	min-height:400px;
+	background:url(../images/fon7.png) no-repeat;
+	background-size: cover;
+	min-width:600px;
+	padding-bottom:30px;
+}
+.intervu>h2{
+	padding-top:25px;
+}
+.intervu_1{
+	background:#dbefff url(../images/A.Shudnev.png) no-repeat;
+	width:62.8%;
+	min-height:195px;
+	margin:40px auto 0 auto;
+	padding: 0 10px 10px 200px;
+	border-radius:3px;
+	text-align:left;
+}
+#int{
+	font-weight: bold;
+	font-style: normal;
+	color: #000000;
+	text-decoration: none;
+}
+
+section{
+}
+footer{
+	background-color: #191719;
+	clear: left;
+	height: 40px;
+	min-width: 600px;
+}
+/* СОЦИАЛКА ВНИЗУ СТАРТ*/
+div.soc{
+	margin: 3px 3px 3px 3px;
+	transition-property: all;
+	transition-duration: 0.5s;
+	max-width: 100%;
+	max-height: 100%;
+	float: right;
+}
+div.soc{
+	float: left;
+	display: inline-block;
+	position: relative;
+	margin-top: 7px;
+	transition-property: all;
+	transition-duration: 0.6s;
+}
+div.soc:hover{
+	transform: rotate(-360deg);
+	transform-origin: 50% 50%;
+}
+div.soc>a>img{
+	border-radius: 25%;
+}
+div.foot{
+	width: 80%;
+	margin: 0 auto 0 auto;
+}
+div.copyright{
+	color: #FFFFFF;
+	text-align: left;
+	padding-top: 10px;
+}
+/* /* СОЦИАЛКА ВНИЗУ КОНЕЦ*/
+.inter1{
+	background :#C7C7C7 url(../images/fon3.png);
+	background-size: cover;
+}
+.inter2{
+	text-align: left;
+	width: 80%;
+	margin-left: 10%;
+}
+.kos{
+	font-style: italic;
+	font-size: 18px;
+}
+	

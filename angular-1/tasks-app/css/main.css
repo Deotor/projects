@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'toms_handwritten_newregular';
+    src: url('./fonts/thnr-webfont.woff') format('woff2'),
+    url('./fonts/thnr-webfont.woff') format('woff');
+}
+body, h1, h2, h3, h4, h5, h6, p, span{
+    font-family: toms_handwritten_newregular, serif;
+}
+button{
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-size: 20px;
+    height: 27px    ;
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 35px;
+    margin: 0;
+}
+p{
+    font-size: 20px;
+}
+label{
+    font-size: 20px;
+}
+select{
+    font-size: 18px;
+}
+select option{
+    list-style: circle;
+}
+
+span{
+    color: blue;
+    text-decoration: underline;
+}
+header{
+    text-align: center;
+}
+.wrapper-0{
+    width: 1000px;
+    min-height: 950px;
+    margin: 5px auto;
+    border: solid black 1px;
+}
+.wrapper-1{
+    margin-top: 50px;
+}
+.wrapper-2{
+    width: 415px;
+    margin: 5px auto;
+}
+.wrapper-3{
+    max-height: 550px;
+    border: solid black 1px;
+    overflow-y: scroll;
+    padding: 5px 10px;
+}
+.task{
+    border: solid black 1px;
+    padding: 10px;
+    margin: 5px 0;
+}
+.p-left{
+    float: left;
+}
+.p-right{
+    float: right;
+}
+.controls{
+    text-align: center;
+}
+.controls button:nth-child(2){
+    margin: 0 30px;
+}
+.controls-3{
+    text-align: center;
+}
+
+.wrapper-4{
+    margin-top: 10px;
+}
+.add-task{
+    text-align: right;
+    border: solid black 1px;
+    padding: 5px;
+    width: 100%;
+}
+.add-form-block{
+    margin: 20px 0;
+}
+.add-form-block input{
+    font-size: 25px;
+}
+.add-form-block label{
+    margin: 0 10px 0 0;
+}
+.add-form-block input{
+    float: right;
+    width: 65%;
+}
+.controls-2{
+    margin-top: 15px;
+    text-align: right;
+}
+.well{
+    margin: 10px 0 0 0;
+    background-color: white;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    font-size: 20px;
+}
+.clear{
+    clear: both;
+}

@@ -1,0 +1,60 @@
+extends layout
+extends menu
+
+block rooms
+    div.wrapper-1.col-xs-12.col-sm-12.col-md-12
+        div.wrapper-1-1.col-xs-12.col-sm-8.col-md-8
+            div.titel-room.col-xs-12.col-sm-12.col-md-12
+                h4 Room #{title}
+                button.del-room.btn.btn-danger.btn-xs(type="button", data-toggle="modal", data-target="#del-room") del room
+                div#del-room.modal.fade.bs-example-modal-sm
+                    div.modal-dialog.modal-sm
+                        div.modal-content
+                            div.modal-header
+                                h4.modal-title Вы уверены?
+                            div.modal-body
+                                button.btn.btn-success(type="button", data-dismiss="modal") NO
+                                button.del-room-yes.btn.btn-danger(type="submit") YES
+                            div.clear
+                            div.modal-footer
+                                h6 by d.leonichev
+                button.del-msg.btn.btn-warning.btn-xs(type="button") del msg
+            div#chat.scrollbar-custom.col-xs-12.col-sm-12.col-md-12
+                ul.list-group.col-xs-12.col-sm-12.col-md-12#chatUl
+        div.wrapper-1-2.col-xs-12.col-sm-4.col-md-4
+            div.titel-room.col-xs-12.col-sm-12.col-md-12
+                h4 Users in #{title}
+            div#list-users.scrollbar-custom.col-xs-12.col-sm-12.col-md-12
+                div#user-info.modal.fade.bs-example-modal-sm
+                    div.modal-dialog
+                        div.modal-content
+                            div.modal-header
+                                h4.modal-title
+                            div.modal-body
+                                div.avatar
+                                    img.img-circle(src="/img/default_img.jpg" alt="avatar" width="200px" height="200px")
+                                    table.table.table-hover(style="float: right; width: 350px;")
+                                        tbody
+                                            thead
+                                                tr
+                                                    th Main Info
+                                                    th
+                                            tr
+                                                td First Name
+                                                td.first-name
+                                            tr
+                                                td Last Name
+                                                td.last-name
+                            div.clear
+                            div.modal-footer(style="margin-top: 15px;")
+                                button.btn.btn-default(type="button", data-dismiss="modal") Close
+                                h6 by d.leonichev
+                ul.list-group#usersUl
+        form.form-inline#chat-form.col-xs-12.col-sm-8.col-md-9
+            input.form-control#input-msg.col-xs-10.col-sm-10.col-md-10(type="text", placeholder="type you massage")
+            button.send.btn.btn-default(type="submit") Send
+    script.
+        var username = "#{user.username}";
+        var roomName ="#{title}"
+    script(src='/js/lib/socket.io-1.2.0.js')
+    script(src='/js/socket.io.js' defer)

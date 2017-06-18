@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bookmarksApp">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/HW22.css">
+    <title>bookmarks-app</title>
+</head>
+<body ng-controller="mainCtrl">
+<div class="panel">
+    <div ng-include="inputForm.url"></div>
+    <div ng-include="outputForm.url"></div>
+</div>
+
+<script src="js/lib/angular.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controllers/mainCtrl.js"></script>
+<script src="js/controllers/addCtrl.js"></script>
+<script src="js/controllers/delCtrl.js"></script>
+<script src="js/controllers/sortBy.js"></script>
+<script src="js/filters/customFilter.js"></script>
+<script src="js/directives/addStyle.js"></script>
+
+</body>
+</html>

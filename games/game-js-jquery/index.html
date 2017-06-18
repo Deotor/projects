@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>game</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/lib/jquery-3.1.1.js" defer></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <p> Введите количество строк <input id="row" type="number" value="3" title="row count" required></p>
+        <p> Введите количество колонок <input id="col" type="number" value="3" title="col count" required></p>
+        <p><input id="build" type="button" value="Построить поле" onclick ='buildArea()'></p>
+        <p> Выберите сложность <select id="dif" title="difficulty level">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select></p>
+        <p><input id="start" type="button" value="СТАРТ" onclick ='startGame()'></p>
+        <p><input id="reset" type="button" value="Еще раз" onclick ='reset()'></p>
+        <p id="game-result">Результат</p>
+    </header>
+    <main>
+        <div id="game-area">
+
+        </div>
+    </main>
+</body>
+</html>

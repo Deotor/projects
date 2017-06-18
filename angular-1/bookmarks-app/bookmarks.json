@@ -1,0 +1,6 @@
+{
+  "bookmarks": [
+    {"id": 1, "name": "VK", "url": "vk.com", "description": "соц сеть"},
+    {"id": 2, "name": "FB", "url": "facebook.com", "description": "соц сеть"}
+  ]
+}

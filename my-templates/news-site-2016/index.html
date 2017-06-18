@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NEWS</title>
+    <link rel="stylesheet" href="public/css/HW10.css">
+    <script src="public/js/HW11.js" defer></script>
+    <script src="public/js/HW12v2.js" defer></script>
+    <script src="public/js/lib/jquery-3.1.1.js"></script>
+    <script src="public/js/lib/jquery.cookie.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <div id="logo">
+            <a href=""><img src="public/images/logo.png"></a>
+        </div>
+        <div id="search">
+            <input type="search" title="search">
+            <a href=""><img src="public/images/search.png"></a>
+        </div>
+        <menu id="menu-top">
+            <li><a href="">Home</a></li>
+            |
+            <li><a href="">About Us</a></li>
+            |
+            <li><a href="">Contact Us</a></li>
+            |
+            <li><a href="">Subscribe</a></li>
+            |
+            <li><a href="">Login</a></li>
+        </menu>
+    </header>
+    <nav>
+        <a href="" class="navElement1">world news</a>
+        <a href="" class="navElement1">sports</a>
+        <a href="" class="navElement1">tech</a>
+        <a href="" class="navElement1">business</a>
+        <a href="" class="navElement1">movies</a>
+        <a href="" class="navElement1">entertainment</a>
+        <a href="" class="navElement1">culture</a>
+        <a href="" class="navElement1">books</a>
+        <a href="" class="navElement1">classifieds</a>
+        <a href="" class="navElement1">blogs</a>
+    </nav>
+    <main>
+        <section id="slider">
+            <div class="slider-main">
+                <a href=""><img src="public/images/slide0.png"></a>
+                <div id="caption">
+                    <p>Lorem ipsum dolor sit amet, consectetur Nulla quis lorem neque,mattis venenatis lectus. Ininterdum ullamcoper doloreu mattis.</p>
+                </div>
+            </div>
+            <div id="slider-sidebar-main">
+                <div class="slider-sidebar">
+                    <a href=""><img src="public/images/slide0.png"></a>
+                </div>
+                <div class="slider-sidebar">
+                    <a href=""><img src="public/images/slide1.png"></a>
+                </div>
+                <div class="slider-sidebar">
+                    <a href=""><img src="public/images/slide2.png"></a>
+                </div >
+                <div class="slider-sidebar">
+                    <a href=""><img src="public/images/slide3.png"></a>
+                </div>
+                <div class="slider-sidebar">
+                    <a href=""><img src="public/images/slide2.png"></a>
+                </div>
+                <div class="slider-sidebar">
+                    <a href=""><img src="public/images/slide1.png"></a>
+                </div>
+                <div class="slider-sidebar">
+                    <a href=""><img src="public/images/slide0.png"></a>
+                </div>
+                <div class="slider-sidebar">
+                    <a href=""><img src="public/images/slide1.png"></a>
+                </div>
+                <div class="slider-sidebar">
+                    <a href=""><img src="public/images/slide2.png"></a>
+                </div>
+                <div class="slider-sidebar">
+                    <a href=""><img src="public/images/slide3.png"></a>
+                </div>
+            </div>
+            <a id="breaking-news" href="">breaking news</a>
+            <a id="up-arrow" href=""><img src="public/images/up.png"></a>
+            <a id="down-arrow" href=""><img src="public/images/down.png"></a>
+        </section>
+        <section id="news-block">
+            <section id="news-blok-1">
+                <h2 class="news-header">from around the world</h2>
+                <div class="line-red"><a class="more-top" href="">more +</a> </div>
+                <article class="news-main">
+                    <a href=""><img src="public/images/news1.png"></a>
+                    <p><b>Lorem ipsum dolor sit amet, consectetur</b><br>Nulla quis lorem neque,mattis venenatis lectus. Ininterdum ullamcoper doloreu mattis.</p>
+                    <a href="" class="read-more"><b>read more</b></a>
+                </article>
+                <article class="news-main">
+                    <a href=""><img src="public/images/news2.png"></a>
+                    <p><b>Lorem ipsum dolor sit amet, consectetur</b><br>Nulla quis lorem neque,mattis venenatis lectus. Ininterdum ullamcoper doloreu mattis.</p>
+                    <a href="" class="read-more"><b>read more</b></a>
+                </article>
+                <article class="news-main">
+                    <a href=""><img src="public/images/news3.png"></a>
+                    <p><b>Lorem ipsum dolor sit amet, consectetur</b><br>Nulla quis lorem neque,mattis venenatis lectus. Ininterdum ullamcoper doloreu mattis.</p>
+                    <a href="" class="read-more"><b>read more</b></a>
+                </article>
+            </section>
+            <section id="news-blok-2">
+                <h2 class="news-header">latest articles</h2>
+                <div class="line-red"><a class="more-top" href="">more +</a> </div>
+                <article class="news-main">
+                    <a href=""><img src="public/images/news4.png"></a>
+                    <p><b>Lorem ipsum dolor sit amet, consectetur</b><br>Nulla quis lorem neque,mattis venenatis lectus. Ininterdum ullamcoper doloreu mattis.</p>
+                    <a href="" class="read-more"><b>read more</b></a>
+                </article>
+                <article class="news-main">
+                    <a href=""><img src="public/images/news5.png"></a>
+                    <p><b>Lorem ipsum dolor sit amet, consectetur</b><br>Nulla quis lorem neque,mattis venenatis lectus. Ininterdum ullamcoper doloreu mattis.</p>
+                    <a href="" class="read-more"><b>read more</b></a>
+                </article>
+                <article class="news-main">
+                    <a href=""><img src="public/images/news6.png"></a>
+                    <p><b>Lorem ipsum dolor sit amet, consectetur</b><br>Nulla quis lorem neque,mattis venenatis lectus. Ininterdum ullamcoper doloreu mattis.</p>
+                    <a href="" class="read-more"><b>read more</b></a>
+                </article>
+            </section>
+            <section id="news-blok-3">
+                <h2 class="news-header">gallery</h2>
+                <div class="line-red"><a class="more-top" href="">more +</a> </div>
+                <a href=""><img src="public/images/news10.png"></a>
+                <a href=""><img src="public/images/news11.png"></a>
+                <a href=""><img src="public/images/news12.png"></a>
+                <a href=""><img src="public/images/news13.png"></a>
+                <a href=""><img src="public/images/news14.png"></a>
+                <a href=""><img src="public/images/news15.png"></a>
+            </section>
+            <section id="news-blok-4">
+                <h2 class="news-header">tech news</h2>
+                <div class="line-red"><a class="more-top" href="">more +</a> </div>
+                <article class="news-main-2">
+                    <p><b>Lorem ipsum dolor sit amet, consectetur</b><br>Nulla quis lorem neque,mattis venenatis lectus. Ininterdum ullamcoper doloreu mattis.</p>
+                    <div class="dotted"></div>
+                </article>
+                <article class="news-main-2">
+                    <p><b>Lorem ipsum dolor sit amet, consectetur</b><br>Nulla quis lorem neque,mattis venenatis lectus. Ininterdum ullamcoper doloreu mattis.</p>
+                    <div class="dotted"></div>
+                </article>
+                <article class="news-main-2">
+                    <p><b>Lorem ipsum dolor sit amet, consectetur</b><br>Nulla quis lorem neque,mattis venenatis lectus. Ininterdum ullamcoper doloreu mattis.</p>
+                    <div class="dotted"></div>
+                </article>
+                <article class="news-main-2">
+                    <p><b>Lorem ipsum dolor sit amet, consectetur</b><br>Nulla quis lorem neque,mattis venenatis lectus. Ininterdum ullamcoper doloreu mattis.</p>
+                    <div class="dotted"></div>
+                </article>
+            </section>
+        </section>
+        <aside id="aside-1">
+            <section id="aside-main-1">
+                <h2 class="news-header">from the desk</h2>
+                <div class="line-red-2"></div>
+                <article class="news-aside-main-1">
+                    <p><b>Lorem ipsum dolor sit amet, consectetur</b><br>Nulla quis lorem neque,mattis venenatis lectus. Ininterdum ullamcoper doloreu mattis.</p>
+                    <a href="" class="read-more"><b>read more</b></a>
+                    <time class="pubtime" datetime="2016-09-07T17:00:00+03:00">сегодня</time>
+                </article>
+                <div class="dotted"></div>
+                <article class="news-aside-main-1">
+                    <p><b>Lorem ipsum dolor sit amet, consectetur</b><br>Nulla quis lorem neque,mattis venenatis lectus. Ininterdum ullamcoper doloreu mattis.</p>
+                    <a href="" class="read-more"><b>read more</b></a>
+                    <time class="pubtime" datetime="2016-09-07T17:00:00+03:00">сегодня</time>
+                </article>
+                <div class="dotted"></div>
+                <article class="news-aside-main-1">
+                    <p><b>Lorem ipsum dolor sit amet, consectetur</b><br>Nulla quis lorem neque,mattis venenatis lectus. Ininterdum ullamcoper doloreu mattis.</p>
+                    <a href="" class="read-more"><b>read more</b></a>
+                    <time class="pubtime" datetime="2016-09-07T17:00:00+03:00">сегодня</time>
+                </article>
+                <a class="more-bottom" href="">more +</a>
+            </section>
+            <section id="aside-main-2">
+                <h2 class="news-header">editorial</h2>
+                <div class="line-red-2"></div>
+                <article class="news-aside-main-2">
+                    <a href=""><img src="public/images/news7.png"></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                </article>
+                <article class="news-aside-main-2">
+                    <a href=""><img src="public/images/news8.png"></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                </article>
+                <article class="news-aside-main-2">
+                    <a href=""><img src="public/images/news9.png"></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                </article>
+                <article class="news-aside-main-2">
+                    <a href=""><img src="public/images/news8.png"></a>
+                    <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                </article>
+            </section>
+        </aside>
+    </main>
+    <aside id="aside-2">
+        <section id="video">
+            <div class="video">
+                <a href=""><img src="public/images/video.png"></a>
+                <p><b>Lorem ipsum dolor sit amet, consectetur</b></p>
+            </div>
+            <div class="video">
+                <a href=""><img src="public/images/video.png"></a>
+                <p><b>Lorem ipsum dolor sit amet, consectetur</b></p>
+            </div>
+            <div class="video">
+                <a href=""><img src="public/images/video.png"></a>
+                <p><b>Lorem ipsum dolor sit amet, consectetur</b></p>
+            </div>
+            <div class="video">
+                <a href=""><img src="public/images/video.png"></a>
+                <p><b>Lorem ipsum dolor sit amet, consectetur</b></p>
+            </div>
+            <a class="more-bottom" href="">more +</a>
+        </section>
+        <div id="banner-1">
+            <a href=""><img src="public/images/banner1.png"></a>
+        </div>
+        <div id="sign-up">
+            <h2 class="news-header">sign up for newsletter</h2>
+            <span>Sign up to receive our   newsletters!</span>
+            <form action="" method="get">
+                <input type="text" name="name" size="23px" placeholder="Name" required>
+                <input type="email" name="email" size="23px" placeholder="Email Address" required>
+                <input class="submit" type="submit" value="SUBMIT">
+                <p class="submit_text">We do not spam. We value your privacy!</p>
+            </form>
+        </div>
+        <section id="popular">
+            <h2 class="popular">popular</h2>
+            <h2 class="news-header-2">most read</h2>
+            <div class="line-red"></div>
+            <article class="news-popular">
+                <time class="pubtime-2" datetime="2016-10-11T17:00:00+03:00">Okt 11th 2016</time>
+                <p><b>Lorem ipsum dolor sit amet, consectetur consectetur consectetur</b><a href="">read more</a></p>
+                <div class="dotted"></div>
+            </article>
+            <article class="news-popular">
+                <time class="pubtime-2" datetime="2016-10-11T17:00:00+03:00">Okt 11th 2016</time>
+                <p><b>Lorem ipsum dolor sit amet, consectetur consectetur consectetur</b><a href="">read more</a></p>
+                <div class="dotted"></div>
+            </article>
+            <article class="news-popular">
+                <time class="pubtime-2" datetime="2016-10-11T17:00:00+03:00">Okt 11th 2016</time>
+                <p><b>Lorem ipsum dolor sit amet, consectetur consectetur consectetur</b><a href="">read more</a></p>
+                <div class="dotted"></div>
+            </article>
+            <article class="news-popular">
+                <time class="pubtime-2" datetime="2016-10-11T17:00:00+03:00">Okt 11th 2016</time>
+                <p><b>Lorem ipsum dolor sit amet, consectetur consectetur consectetur</b><a href="">read more</a></p>
+                <div class="dotted"></div>
+            </article>
+            <article class="news-popular">
+                <time class="pubtime-2" datetime="2016-10-11T17:00:00+03:00">Okt 11th 2016</time>
+                <p><b>Lorem ipsum dolor sit amet, consectetur consectetur consectetur</b><a href="">read more</a></p>
+                <div class="dotted"></div>
+            </article>
+            <a class="more-bottom" href="">more +</a>
+        </section>
+        <div id="banner-2">
+            <a href=""><img src="public/images/banner2.png"></a>
+        </div>
+    </aside>
+    <footer>
+        <div class="dotted"></div>
+        <div id="banner-3">
+            <a href=""><img src="public/images/banner3.png"></a>
+        </div>
+        <div class="dotted"></div>
+        <menu id="menu-bottom">
+            <li><a href="">World News</a></li>
+            |
+            <li><a href="">Sports</a></li>
+            |
+            <li><a href="">Tech</a></li>
+            |
+            <li><a href="">Business</a></li>
+            |
+            <li><a href="">Movies</a></li>
+            |
+            <li><a href="">Entertainment</a></li>
+            |
+            <li><a href="">Culture</a></li>
+            |
+            <li><a href="">Books</a></li>
+            |
+            <li><a href="">Classifieds</a></li>
+            |
+            <li><a href="">Blogs</a></li>
+        </menu>
+        <p id="copyrights">Copyright &copy; </p>
+    </footer>
+</div>
+</body>
+</html>

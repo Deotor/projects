@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="testWork">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>login-app</title>
+</head>
+<body>
+<div class="wrapper-1 col-xs-10 col-sm-10 col-md-10 col-lg-8 col-md-offset-1 col-sm-offset-1 col-xs-offset-1 col-lg-offset-2" ng-controller="mainCtrl">
+    <header class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>{{user.name}}</h3>
+        <ul id="lng">
+            <li ng-class="{'selected' : currentLng('ru')}" ng-click="changeLng('ru')">Ru</li>
+            <li ng-class="{'selected' : currentLng('en')}" ng-click="changeLng('en')">En</li>
+        </ul>
+        <input id="logout" class="btn btn-default" type="button"  value="{{'LOGOUT' | translate}}" ng-click="redirect()" ng-hide="hideLogout">
+    </header>
+    <div class="wrapper-2 col-xs-12 col-sm-12 col-md-12 col-lg-12" ui-view></div>
+    <footer>
+        <p>by d.leonichev 2017</p>
+    </footer>
+</div>
+
+<script src="js/lib/angular.min.js"></script>
+<script src="js/lib/angular-translate.min.js"></script>
+<script src="js/lib/angular-ui-router.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controllers/main_ctrl.js"></script>
+<script src="js/controllers/login_ctrl.js"></script>
+<script src="js/controllers/view_1_ctrl.js"></script>
+<script src="js/routes/routes.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "testWork",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/server.js"
+  },
+  "dependencies": {
+    "connect": "latest",
+    "serve-static": "latest"
+  }
+}

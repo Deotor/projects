@@ -1,0 +1,10 @@
+<form class="form-block" name="addForm" ng-controller="addCtrl">
+    <p>Add bookmark:</p>
+    <input class="form-control" ng-model="name" placeholder = "name" required ng-pattern="/^[A-Za-zА-Яа-я]{1,11}$/" name="name">
+    <span class="animate-show" ng-show="addForm.name.$error.pattern">от 1 до 12 символов без пробелов</span>
+    <input type="text" class="form-control" ng-model="url" placeholder="url" required ng-pattern="/^[A-Za-zА-Яа-я]{1,11}$/" name="url">
+    <span ng-show="addForm.url.$error.pattern">от 1 до 12 символов без пробелов</span>
+    <input type="text" class="form-control" ng-model="description" placeholder="description" required ng-pattern="/^[A-Za-zА-Яа-я]{1,11}$/" name="description">
+    <span ng-show="addForm.description.$error.pattern">от 1 до 12 символов без пробелов</span>
+    <input type="submit" class="btn btn-default" ng-click="addBookmarks(name, url, description, addForm)" value="ADD" ng-disabled="addForm.$invalid">
+</form>

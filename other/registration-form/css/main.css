@@ -1,0 +1,94 @@
+body{
+    margin: 15px;
+}
+#wrapper{
+    width: 900px;
+    margin: 0 auto;
+    height: 560px;
+    position: relative;
+}
+menu{
+    width: 900px;
+    text-align: center;
+}
+menu>li{
+    display: inline-block;
+    padding: 5px 70px;
+    margin: 0;
+    position: relative;
+    text-transform: uppercase;
+    list-style-type: none;
+    background-image: repeating-linear-gradient(to top,rgb(204, 204, 204) 0%,rgb(255, 255, 255) 100%);
+
+}
+.active-color{
+    background-image: repeating-linear-gradient(to top,rgb(150, 150, 150) 0%,rgb(255, 255, 255) 100%);
+}
+.active:after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-top: 10px solid #979797;
+    border-right: 20px solid transparent;
+    border-bottom: 0 solid transparent;
+    border-left: 20px solid transparent;
+}
+form{
+    width: 400px;
+    margin: 50px 15px;
+}
+.next{
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    float: right;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+#finish{
+    border-radius: 0;
+}
+.line-red{
+    border-bottom: 2px black solid;
+    margin: 20px 0;
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    width: 900px;
+}
+#address{
+    margin-bottom: 15px;
+}
+select{
+    margin: 15px 0;
+}
+#csv-div>label{
+    padding: 7px;
+}
+#csv{
+    float: right;
+    width: 300px;
+}
+.hover{
+    border: lightskyblue 2px solid;
+}
+#left{
+    font-weight: bold;
+    float: left;
+    width: 150px;
+}
+#step4{
+    height: 410px;
+    position: relative;
+}
+#step4>label{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+.error-border{
+    border: red 2px solid;
+}

@@ -1,0 +1,31 @@
+#map {
+    margin: 10px auto;
+    height: 650px;
+    width: 777px;
+}
+.form-block{
+    float: left;
+    margin: 0 10px;
+}
+.form-block>input{
+    margin: 5px 0;
+    width: 200px;
+}
+#goCenterUI, #setCenterUI, #goCurrentPositionUI {
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.3);
+    cursor: pointer;
+    float: left;
+    text-align: center;
+    margin: 5px;
+}
+
+#goCenterText, #setCenterText, #goCurrentPositionText {
+    color: rgb(25,25,25);
+    font-family: Roboto,Arial,sans-serif;
+    font-size: 15px;
+    line-height: 25px;
+    padding: 0 5px;
+}

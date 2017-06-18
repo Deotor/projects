@@ -1,0 +1,329 @@
+@font-face {
+    font-family: 'lato_bold';
+    src: url('./fonts/lato-bold-webfont.woff2') format('woff2'),
+    url('./fonts/lato-bold-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'lato_regular';
+    src: url('./fonts/lato-regular-webfont.woff2') format('woff2'),
+    url('./fonts/lato-regular-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'playfair_displayregular';
+    src: url('./fonts/playfairdisplay-regular-webfont.woff2') format('woff2'),
+    url('./fonts/playfairdisplay-regular-webfont.woff') format('woff');
+}
+body{
+    font-family: lato_bold, serif;
+    letter-spacing: 1px;
+    color: #999999;
+}
+h1{
+ color: black;
+ font-family: playfair_displayregular, serif;
+ font-size: 58px;
+}
+h1:first-letter{
+    text-transform: uppercase;
+}
+header{
+    margin-top: 15px;
+}
+.wrapper-0{
+    width: 1440px;
+    margin: 0 auto;
+}
+ul{
+    list-style: none;
+}
+ul>li{
+    display: inline;
+}
+a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #999999;
+}
+a:visited{
+    color: #999999;
+}
+a:hover{
+    color: #FC411D;
+}
+.nav-min{
+    font-size: 11px;
+    float: left;
+    margin-left: 149px;
+}
+.nav-min>ul>li{
+    margin: 0 16px;
+}
+.nav-min>ul>li:first-child{
+    margin-left: 0;
+}
+.nav-min>ul>li:last-child{
+    margin-right: 0;
+}
+.selects{
+    float: right;
+    margin-right: 148px;
+}
+.selects .select{
+    display: inline;
+}
+.select select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    float: right;
+    font-size: 11px;
+    letter-spacing: 1px;
+    border: none;
+    padding-right: 15px;
+    font-family: lato_bold, serif;
+    text-transform: uppercase;
+    color: #999999;
+}
+.select{
+    position: relative;
+    float: left;
+}
+.select:first-child{
+    margin-right: 40px;
+}
+.select::after {
+    content: '>';
+    font: 11px "Consolas", monospace;
+    color: #999999;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    right: 0;
+    top: 1px;
+    position: absolute;
+    pointer-events: none;
+}
+.wrapper-0-1{
+    height: 13px;
+}
+.wrapper-0-2{
+    margin-top: 15px;
+    padding: 40px 0;
+    border-top: solid 1px #EDEDED;
+    border-bottom: solid 1px #EDEDED;
+}
+.logo{
+    margin-left: 150px;
+    margin-top: -10px;
+    float: left;
+}
+.nav-main{
+    margin-left: 408px;
+}
+.nav-main>li{
+    font-size: 12px;
+    margin: 0 25px;
+}
+.nav-active{
+    border-bottom: solid 2px #2088DB;
+}
+.nav-active a{
+    color: black;
+}
+.cart-search{
+    float: right;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-right: 150px;
+    margin-top: -12px;
+}
+.cart>p>span{
+    border: solid 2px #2088DB;
+    padding: 14px 19px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+.cart{
+    float: left;
+    margin-right: 10px;
+}
+.cart:hover{
+    cursor: pointer;
+}
+.search{
+    float: right;
+    margin-top: -15px;
+    margin-right: -10px;
+}
+.search:hover{
+    cursor: pointer;
+}
+.search input[type=search] {
+    width: 0;
+    border: none;
+    font-size: 12px;
+    font-family: lato_bold, serif;
+    letter-spacing: 1px;
+    background: url("../img/search.png") no-repeat 10px 10px;
+    padding: 10px 5px 8px 30px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+.search input[type=search]:focus {
+    width: 150px;
+    border: 2px solid #2088DB;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+main{
+    width: 1140px;
+    margin: 100px auto 0 auto;
+    text-align: center;
+}
+.nav-content{
+    margin: 55px 0;
+}
+.products{
+    margin-top: -5px;
+}
+.product{
+    float: left;
+    margin-bottom: 37px;
+    position: relative;
+}
+.product-new:before{
+    content: 'NEW';
+    position: absolute;
+    font-size: 11px;
+    background-color: #2088DB;
+    padding: 6px 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    color: white;
+    top: 25px;
+    left: 25px;
+}
+.product:nth-child(4n+2){
+    margin: 0 33px;
+}
+.product:nth-child(4n+3){
+    margin-right: 33px;
+}
+.product-name{
+    letter-spacing: 0;
+    margin-top: 23px;
+    font-family: playfair_displayregular, serif;
+    color: black;
+}
+.product .product-name:first-letter{
+    text-transform: uppercase;
+}
+.price{
+    margin-top: 10px;
+    font-family: lato_regular, serif;
+    font-size: 16px;
+    letter-spacing: 0;
+}
+.price p{
+    display: inline;
+    margin: 5px;
+}
+.price-currency{
+    font-size: 16px;
+}
+.price-old{
+    color: #FC411D;
+    text-decoration: line-through;
+}
+.load-more{
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-family: lato_bold, serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    background: none;
+    color: #999999;
+    border: none;
+    cursor: pointer;
+}
+.subscribe{
+    height: 285px;
+    margin-top: 55px;
+    text-align: center;
+    background-image: url("../img/back-sub.png");
+}
+.subscribe form{
+    padding-top: 68px;
+}
+.subscribe p{
+    text-transform: uppercase;
+    color: #416073;
+    font-size: 12px;
+}
+.subscribe h2{
+    font-family: playfair_displayregular, serif;
+    margin-top: 22px;
+    font-size: 36px;
+    color: white;
+}
+.subscribe h2:first-letter{
+    text-transform: uppercase;
+}
+.input-block{
+    position: relative;
+    width: 350px;
+    margin: 0 auto;
+}
+.subscribe input[type="email"]{
+    margin-top: 30px;
+    background: none;
+    text-transform: uppercase;
+    font-family: lato_bold, serif;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 1px;
+    width: 250px;
+    height: 45px;
+    border: solid 1px white;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    padding: 0 25px;
+}
+input[type="email"]::-webkit-input-placeholder{
+    color: white;
+}
+input[type="email"]::-moz-placeholder{
+    color: white;
+}
+input[type="email"]:-ms-input-placeholder{
+    color: white;
+}
+.subscribe input[type="submit"]{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 22px;
+    position: absolute;
+    top: 38px;
+    right: 40px;
+    cursor: pointer;
+}
+footer{
+    clear: both;
+    padding: 42px 0;
+}
+.rights{
+    float: right;
+    font-size: 12px;
+    margin-right: 150px;
+    margin-top: -12px;
+    letter-spacing: 1px;
+}
+input:focus, select:focus, button:focus{
+    outline: none;
+}

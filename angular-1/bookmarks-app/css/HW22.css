@@ -1,0 +1,40 @@
+.panel{
+    margin: 20px auto;
+    width: 950px;
+}
+.table{
+    width: 700px;
+    float: right;
+}
+.form-block{
+    float: left;
+    display: block;
+    width: 200px;
+    text-align: center;
+    position: relative;
+}
+.form-block>input{
+    margin: 10px 0;
+}
+.form-block .ng-invalid {
+    border: 1px solid red;
+}
+.form-block .ng-untouched {
+    border: 1px solid gray;
+}
+.form-block span{
+    color: red;
+    font-size: 10px;
+}
+.animate-show{
+    transition: all linear 0.5s;
+}
+.form-block .btn{
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+}
+/*
+.table tr th:hover{
+    color: #be0011;
+}*/

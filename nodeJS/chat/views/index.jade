@@ -1,0 +1,10 @@
+extends layout
+extends menu
+
+block content
+    div.col-xs-12.col-md-12.col-sm-12
+        if(!user)
+            h4 Войдите или зарегистрируйтесь что бы юзать чат!
+        if(user)
+            h4 Привет
+                span.user  #{user.username}!

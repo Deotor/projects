@@ -1,0 +1,43 @@
+extends layout
+
+block menu
+    div.wrapper-0.col-xs-12.col-sm-12.col-md-12
+        div.col-xs-12.col-sm-12.col-md-1
+            ul.nav.nav-pills.main
+                li.active
+                    a(href="/") Main
+        div.col-xs-12.col-sm-12.col-md-9
+            ul.nav.nav-tabs.rooms
+                if(!user)
+                if(user)
+                    if rooms.length > 0
+                        each room in rooms
+                            li
+                                a(href="/rooms/#{room.roomName}") #{room.roomName}
+                    li#add-room-li
+                        a(href="#add-room", data-toggle="modal") add room
+                        div#add-room.modal.fade
+                            div.modal-dialog
+                                div.modal-content
+                                    div.modal-header
+                                        h4.modal-title Add Room
+                                    div.modal-body
+                                        form#add-room-form(role='form', action="/rooms/addroom", method="post")
+                                            div.form-group
+                                                label(for="room-name") Room name
+                                                input.form-control(type="text", name="roomname", placeholder="room name", required)
+                                                div.clear
+                                                button.btn.btn-default(type="button", data-dismiss="modal") Close
+                                                button.btn.btn-default(type="submit") Add room
+                                    div.modal-footer
+                                        h6 by d.leonichev
+        div.col-xs-3.col-sm-2.col-md-1
+            if(!user)
+                button#signIn.btn.btn-default.navbar-btn(type="button", , onclick="location.href='/signin'") Sign in
+            if(user)
+                button#signIn.btn.btn-default.navbar-btn(type="button", , onclick="location.href='/Logout'") Logout
+        div.col-xs-3.col-sm-2.col-md-1
+            button#signUp.btn.btn-default.navbar-btn(type="button", onclick="location.href='/signup'") Sign up
+    script.
+        var roomName = "#{title}";
+    script(src='/js/valid.js' defer)

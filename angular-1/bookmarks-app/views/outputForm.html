@@ -1,0 +1,22 @@
+<table class="table table-striped" ng-controller="delCtrl" custom-directive>
+    <thead ng-controller="sortBy">
+    <tr>
+        <th ng-click="sortBy('id')">ID</th>
+        <th ng-click="sortBy('name')">Name</th>
+        <th ng-click="sortBy('url')">URL</th>
+        <th>Description</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="bookmarks in list.bookmarks">
+        <td ng-style='myStyle'>{{bookmarks.id}}</td>
+        <td ng-style='myStyle'>{{bookmarks.name}}</td>
+        <td ng-style='myStyle'>{{bookmarks.url}}</td>
+        <td ng-style='myStyle'>{{bookmarks.description | customFilter}}</td>
+        <td ng-style='myStyle'>
+            <button class="btn btn-default" ng-click="deleteBookmarks(bookmarks.id)">delete</button>
+        </td>
+    </tr>
+    </tbody>
+</table>

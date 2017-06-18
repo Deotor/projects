@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>reg-form</title>
+    <script src="js/lib/jquery-3.1.1.js"></script>
+    <script src="js/lib/jquery.cookie.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <div id="wrapper">
+        <menu>
+            <li>Step 1</li>
+            <li>Step 2</li>
+            <li>Step 3</li>
+            <li>Step 4</li>
+        </menu>
+        <form id="step1">
+            <div class="form-group">
+                <input type="text" class="form-control" id="name" placeholder="Name" name="name">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control error" id="login" placeholder="Login" data-toggle="tooltip" name="login">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control error" id="password" placeholder="Password" name="password">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control error" id="re-password" placeholder="Retype password" name="re-password">
+            </div>
+        </form>
+        <form id="step2">
+            <div class="form-group">
+                <input type="text" class="form-control" id="name-full" placeholder="Full name" name="name-full">
+            </div>
+            <textarea class="form-control" rows="3" id="address" placeholder="Address" name="address"></textarea>
+            <select class="form-control" id="city" title="">
+                <option selected>City</option>
+                <option>Киев</option>
+                <option>Дублин</option>
+                <option>Амстердам</option>
+                <option>Афины</option>
+                <option>Берлин</option>
+            </select>
+            <select class="form-control" id="country" title="" name="country">
+                <option selected>Country</option>
+                <option>Украина</option>
+                <option>США</option>
+                <option>Германия</option>
+                <option>Франция</option>
+                <option>Египет</option>
+            </select>
+            <div class="form-group">
+                <input type="tel" class="form-control error" id="phone" placeholder="+99(99)9999-9999" name="phone">
+            </div>
+        </form>
+        <form id="step3">
+            <select class="form-control" id="cardType" title="" name="cardType">
+                <option selected>Card type</option>
+                <option>VISA</option>
+                <option>MASTERCARD</option>
+            </select>
+            <div class="form-group">
+                <input type="text" class="form-control error" id="cardNumber" placeholder="Card Number" maxlength="16" name="cardNumber">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" id="cardName" placeholder="Name on card" name="cardName">
+            </div>
+            <div class="form-group">
+                <label for="expMonth">Expiration date</label>
+                <select class="form-control" id="expMonth" title="" name="expMonth">
+                    <option selected>Month</option>
+                    <option>январь</option>
+                    <option>февраль</option>
+                </select>
+                <select class="form-control" id="expYear" title="" name="expYear">
+                    <option selected>Year</option>
+                    <option>2016</option>
+                    <option>2017</option>
+                </select>
+            </div>
+            <div class="form-group" id="csv-div">
+                <label for="CSV">CSV code</label>
+                <input type="password" class="form-control" id="csv" maxlength="3" title="" name="csv">
+            </div>
+        </form>
+        <form id="step4">
+            <div id="left">
+                <p>Name:</p>
+                <p>Login:</p>
+                <p>Password:</p>
+                <p>Full Name:</p>
+                <p>Address:</p>
+                <p>City:</p>
+                <p>Country:</p>
+                <p>Phone:</p>
+                <p>Card Type:</p>
+                <p>Card Number:</p>
+                <p>Name on Card:</p>
+                <p>Expiration date:</p>
+            </div>
+            <div id="right">
+
+            </div>
+            <label>
+                <input type="checkbox" id="read" value="">
+                I read all!
+            </label>
+        </form>
+        <div class="line-red"></div>
+        <button type="button" id="next" class="btn btn-default next" data-toggle="tooltip">Next</button>
+        <button type="button" id="finish" class="btn btn-default next" data-toggle="tooltip">Finish</button>
+    </div>
+</body>
+</html>
